@@ -23,7 +23,7 @@ queue_size = Gauge("dispatcher_queue_size", "Current Redis queue size")
 QUEUE_NAME = 'inference_queue'
 MAX_WAIT_TIME = 0.5  # seconds
 FORWARD_INTERVAL = 0.05  # 50ms
-replica_urls = ["http://localhost:6001/predict"]
+replica_urls = ["http://localhost:6001/"]
 replica_index = 0
 
 

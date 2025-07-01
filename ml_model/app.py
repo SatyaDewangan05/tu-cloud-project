@@ -16,12 +16,7 @@ inference_latency = Histogram(
 app = Flask(__name__)
 
 
-@app.route("/", methods=["GET"])
-def health():
-    return jsonify({"status": "ok"})
-
-
-@app.route("/predict", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 @inference_latency.time()
 def index():
     requests_total.inc()
