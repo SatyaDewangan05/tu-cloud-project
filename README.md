@@ -64,8 +64,8 @@ kubectl apply -f inference-service.yaml
 Expose service:
 
 ```bash
-minikube service inference-service
-kubectl port-forward deployment/inference-service 6001:6001 8001:8001
+minikube service tu-cloud-project
+kubectl port-forward deployment/tu-cloud-project 6001:6001 8001:8001
 ```
 
 ---
